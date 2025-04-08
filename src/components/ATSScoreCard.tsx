@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -64,7 +65,7 @@ const ATSScoreCard = ({ score, positiveKeywords, negativeKeywords }: Props) => {
                         <div className="mb-4">
                             <div className="flex justify-between items-center mb-2">
                                 <h3 className="text-sm font-medium">Positive Keywords:</h3>
-                                <Button variant="secondary" size="xs" onClick={() => handleCopyKeywords(positiveKeywords, 'positive')}>
+                                <Button variant="secondary" size="sm" onClick={() => handleCopyKeywords(positiveKeywords, 'positive')}>
                                     Copy
                                 </Button>
                             </div>
@@ -82,7 +83,7 @@ const ATSScoreCard = ({ score, positiveKeywords, negativeKeywords }: Props) => {
                         <div>
                             <div className="flex justify-between items-center mb-2">
                                 <h3 className="text-sm font-medium">Negative Keywords:</h3>
-                                <Button variant="secondary" size="xs" onClick={() => handleCopyKeywords(negativeKeywords, 'negative')}>
+                                <Button variant="secondary" size="sm" onClick={() => handleCopyKeywords(negativeKeywords, 'negative')}>
                                     Copy
                                 </Button>
                             </div>
